@@ -4,8 +4,8 @@ function Index(props) {
 	return (
 		<div className="homeBody">
 			<div className="homeText">
-				<h1>Your new best friend</h1>
-				<h2>Welcome to the newest event planner catered to artists</h2>
+				<h1>Hi! I'm Gabe</h1>
+				<h2>I'm a full stack web developer with a focus on always improving.</h2>
 			</div>
 		</div>
 	);
