@@ -6,8 +6,6 @@ import {
 import App from './App';
 import Index from './pages/index';
 import Dashboard from './pages/dashboard';
-// import Signup from './pages/signup';
-// import Login from './pages/login';
 const router = createBrowserRouter(
 	createRoutesFromElements(
 		<Route path="/" element={<App />}>
