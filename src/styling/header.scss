@@ -24,18 +24,15 @@
 			color: grey;
 		}
 	}
-	.profileIcon {
-		color: #476ccc;
-		margin-right: 2em;
-		font-size: 3em;
-		&:hover {
-			cursor: pointer;
-			color: grey;
-		}
-	}
-	.iconLink {
+	.right-side-header {
 		display: flex;
-		align-items: center;
+		h2 {
+			color: #476ccc;
+			&:hover {
+				cursor: pointer;
+				color: grey;
+			}
+		}
 	}
 }
 
