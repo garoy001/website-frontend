@@ -1,7 +1,7 @@
 .header {
 	box-shadow: 1px 1px 1px 1px rgb(0, 0, 0, 0.5);
 	font-family: 'Kanit', sans-serif;
-	width: 100vw;
+	width: 100%;
 	a {
 		text-decoration: none;
 	}
@@ -11,6 +11,7 @@
 	align-items: center;
 	position: relative;
 	justify-content: space-between;
+	
 	h1 {
 		color: #476ccc;
 		margin: 0;
@@ -18,7 +19,8 @@
 		margin-top: auto;
 		margin-bottom: auto;
 		letter-spacing: 0.03em;
-		font-size: 3em;
+		font-size: 2em;
+		text-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2);
 		&:hover {
 			cursor: pointer;
 			color: grey;
@@ -26,7 +28,9 @@
 	}
 	.right-side-header {
 		display: flex;
+		width:fit-content;
 		h2 {
+			text-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2);
 			color: #476ccc;
 			&:hover {
 				cursor: pointer;
