@@ -56,7 +56,7 @@ export const projectObj = [
 	{
 		stocksAPI: {
 			name: 'Stocks Api App',
-			img: '',
+			img: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
 			links: {
 				github: {
 					frontEnd: 'https://github.com/garoy001/router_lab',
@@ -75,7 +75,7 @@ export const projectObj = [
 	{
 		foodAPI: {
 			name: 'Food Api App',
-			img: '',
+			img: 'https://images.unsplash.com/photo-1482049016688-2d3e1b311543?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=410&q=80',
 			links: {
 				github: {
 					frontEnd: 'https://github.com/garoy001/GAProject2',
@@ -94,7 +94,7 @@ export const projectObj = [
 	{
 		magic8Ball: {
 			name: 'Magic 8 Ball',
-			img: '',
+			img: 'https://www.etftrends.com/wp-content/uploads/2019/08/A-Magic-8-Ball-Market.jpg',
 			links: {
 				github: {
 					frontEnd: 'https://github.com/garoy001/express-lab-2',
@@ -113,7 +113,7 @@ export const projectObj = [
 	{
 		pubMenu: {
 			name: 'Tavern Menu',
-			img: '',
+			img: 'https://images.unsplash.com/photo-1555658636-6e4a36218be7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
 			links: {
 				github: {
 					frontEnd: 'https://github.com/garoy001/Git-Pub',
@@ -132,7 +132,7 @@ export const projectObj = [
 	{
 		pubMenu: {
 			name: 'CETAMD',
-			img: '',
+			img: 'https://i.ibb.co/6ZVWJJg/Add-a-heading.png',
 			links: {
 				github: {
 					frontEnd: 'https://github.com/garoy001/cetamdfrontend',
