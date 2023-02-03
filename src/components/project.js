@@ -59,7 +59,7 @@ function Project(props) {
 			</div>
 			<div className="aboutProject">
 				<h2 className="projectName">{props.info.name}</h2>
-				<div className="projectLinks">
+				{/* <div className="projectLinks">
 					{links.map((linkObj) => {
 						{
 							linkObj = Object.values(linkObj)[0];
@@ -70,7 +70,7 @@ function Project(props) {
 							</a>
 						);
 					})}
-				</div>
+				</div> */}
 			</div>
 			
 			
