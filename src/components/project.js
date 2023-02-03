@@ -52,11 +52,13 @@ function Project(props) {
 			</div>
 			<div className="aboutProject">
 				<h2 className="projectName">{props.info.name}</h2>
-				{/* <div className="techUsed">
-					{props.tech.map((x) => {
-						return <img src={x.icon} className="techIcon"/>;
+				<div className="techUsed">
+					{
+					props.info.tech.map((x) => {
+						console.log(x + " <<<<<")
+						return <img src={x} className="techIcon"/>;
 					})}
-				</div> */}
+				</div>
 				<div className="projectLinks">
 					{links.map((linkObj) => {
 						{

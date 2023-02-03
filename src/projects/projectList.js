@@ -1,18 +1,35 @@
+export const jsIco = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+export const cssIco = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg"
+export const figmaIco = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+export const expIco = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+export const htmlIco = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg"
+export const mongoIco = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg"
+export const nodeIco = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg"
+export const linkedinIco = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+export const pythonIco = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg"
+export const reactIco = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
+export const trelloIco = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain-wordmark.svg"
+export const githubIco = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg"
+export const sassIco = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
+export const axiosIco = "https://www.vectorlogo.zone/logos/axios/axios-icon.svg"
+export const jqueryIco = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original-wordmark.svg"
+
 export const projectObj = [
 	{
 		weatherApp: {
 			name: 'Weather Api App',
-			img: '',
+			img: 'https://images.unsplash.com/photo-1580193813605-a5c78b4ee01a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80',
 			links: {
 				github: {
 					frontEnd: '#',
 					backEnd: '',
 				},
-				deployed: '',
+				deployed: '#',
 			},
-			tech: [],
+			tech: [jsIco, cssIco, jqueryIco, htmlIco],
+			dependencies: ["JQuery"],
 			description: {
-				short: '',
+				short: 'Weather API serving weekly, daily, hourly weather updates',
 				long: '',
 			},
 		},
@@ -20,7 +37,7 @@ export const projectObj = [
 	{
 		cheeseAPI: {
 			name: 'Cheese Api App',
-			img: '',
+			img: 'https://images.unsplash.com/photo-1631379578550-7038263db699?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=874&q=80',
 			links: {
 				github: {
 					frontEnd: 'https://github.com/garoy001/CheeseLabFrontEnd',
@@ -28,9 +45,10 @@ export const projectObj = [
 				},
 				deployed: '',
 			},
-			tech: [],
+			tech: [jsIco, cssIco, expIco, htmlIco, mongoIco, nodeIco, reactIco, sassIco],
+			dependencies: ["react", "react-router-dom", "sass", "cors", "dotenv", "express", "mongoose", "morgan", "nodemon"],
 			description: {
-				short: '',
+				short: 'An app to store your favorite cheeses',
 				long: '',
 			},
 		},
@@ -46,9 +64,10 @@ export const projectObj = [
 				},
 				deployed: '',
 			},
-			tech: [],
+			tech: [jsIco, cssIco, htmlIco, reactIco],
+			dependencies: ["react", "react-router-dom"],
 			description: {
-				short: '',
+				short: 'A stock tracking app',
 				long: '',
 			},
 		},
@@ -64,9 +83,10 @@ export const projectObj = [
 				},
 				deployed: '',
 			},
-			tech: [],
+			tech: [jsIco, cssIco, expIco, htmlIco, axiosIco, mongoIco],
+			dependencies: ["ajax", "axios","dotenv","ejs","express","method-override","mongoose"],
 			description: {
-				short: '',
+				short: 'An api that returns food information and stores searches',
 				long: '',
 			},
 		},
@@ -82,9 +102,10 @@ export const projectObj = [
 				},
 				deployed: '',
 			},
-			tech: [],
+			tech: [jsIco, cssIco, expIco, htmlIco],
+			dependencies: ["express", "dotenv"],
 			description: {
-				short: '',
+				short: 'A magic 8 ball app',
 				long: '',
 			},
 		},
@@ -100,11 +121,31 @@ export const projectObj = [
 				},
 				deployed: '',
 			},
-			tech: [],
+			tech: [jsIco, cssIco, expIco, htmlIco],
+			dependencies: ["dotenv", "ejs", "express"],
 			description: {
-				short: '',
+				short: 'An editable menu for a Tavern',
 				long: '',
 			},
 		},
 	},
+	{
+		pubMenu: {
+			name: 'CETAMD',
+			img: '',
+			links: {
+				github: {
+					frontEnd: 'https://github.com/garoy001/cetamdfrontend',
+					backEnd: 'https://github.com/garoy001/cetamdbackend',
+				},
+				deployed: '',
+			},
+			tech: [jsIco, cssIco, expIco, htmlIco, sassIco, reactIco, mongoIco],
+			dependencies: ["dotenv", "react", "express", "react-datepicker", "react-router-dom","sass", "react-icons", "react-places-autocomplete", "mongoose", "morgan", "nodemon", "jsonwebtoken", "bcrypt.js", "cors"],
+			description: {
+				short: 'Event Planning App',
+				long: '',
+			},
+		},
+	}
 ];
