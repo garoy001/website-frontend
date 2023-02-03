@@ -3,7 +3,8 @@ import '../styling/homePage.scss';
 import Projects from '../components/projects';
 function Index(props) {
 	return (
-		<div className="homeBody fade-in">
+		<div>
+<div className="homeBody fade-in">
 			<div className="homeText">
 				<h1>Hi! I'm Gabe</h1>
 				<h2>
@@ -13,10 +14,13 @@ function Index(props) {
 			<div className="arrow bounce">
 				<p className="fa fa-arrow-down fa-2x" href="#"></p>
 			</div>
-			<div className="projects">
+			
+		</div>
+		<div className="projects">
 				<Projects />
 			</div>
 		</div>
+		
 	);
 }
 

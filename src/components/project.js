@@ -47,18 +47,18 @@ function Project(props) {
 	const links = checkLinks(props.info.links);
 	return (
 		<div className="projectBox">
-			<div className="imageBox">
-				<img className="projectImg" src={props.info.img} />
-			</div>
-			<div className="aboutProject">
-				<h2 className="projectName">{props.info.name}</h2>
-				<div className="techUsed">
+			<div className="techUsed">
 					{
 					props.info.tech.map((x) => {
 						console.log(x + " <<<<<")
 						return <img src={x} className="techIcon"/>;
 					})}
 				</div>
+			<div className="imageBox">
+				<img className="projectImg" src={props.info.img} />
+			</div>
+			<div className="aboutProject">
+				<h2 className="projectName">{props.info.name}</h2>
 				<div className="projectLinks">
 					{links.map((linkObj) => {
 						{
@@ -72,6 +72,8 @@ function Project(props) {
 					})}
 				</div>
 			</div>
+			
+			
 		</div>
 	);
 }
