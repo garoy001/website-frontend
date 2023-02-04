@@ -56,6 +56,7 @@ function Project(props) {
 				</div>
 			<div className="imageBox">
 				<img className="projectImg" src={props.info.img} />
+				<div className="projectImgBlock"></div>
 			</div>
 			<div className="aboutProject">
 				<h2 className="projectName">{props.info.name}</h2>

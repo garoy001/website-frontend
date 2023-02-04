@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styling/homePage.scss';
+import "../styling/projects.scss"
 import Projects from '../components/projects';
 function Index(props) {
 	return (
@@ -14,9 +15,11 @@ function Index(props) {
 			<div className="arrow bounce">
 				<p className="fa fa-arrow-down fa-2x" href="#"></p>
 			</div>
+			<div className='dividingLine'></div>
 			
 		</div>
 		<div className="projects">
+		<h1 className='projectsTitle'>Featured Projects</h1>
 				<Projects />
 			</div>
 		</div>
