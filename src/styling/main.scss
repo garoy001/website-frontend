@@ -1,0 +1,30 @@
+@mixin bg-theme {
+	background: rgb(117, 183, 217);
+	background: linear-gradient(
+		0deg,
+		rgba(117, 183, 217, 1) 0%,
+		rgba(37, 76, 142, 1) 53%,
+		rgba(76, 25, 177, 1) 100%
+	);
+}
+.my-bg-theme {
+	@include bg-theme;
+}
+.gif-bg-main {
+	background-image: url('https://wallpaperaccess.com/full/7270387.gif');
+	background-repeat: repeat;
+	background-size: cover;
+	background-position: center;
+}
+.gif-bg-projects {
+	background-image: url('https://wallpaperaccess.com/full/869923.gif');
+	background-repeat: repeat;
+	background-size: cover;
+	background-position: center;
+}
+.gif-bg-tech {
+	background-image: url('https://wallpaperaccess.com/full/8406764.gif');
+	background-repeat: repeat;
+	background-size: cover;
+	background-position: center;
+}

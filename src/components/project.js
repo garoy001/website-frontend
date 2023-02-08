@@ -48,12 +48,10 @@ function Project(props) {
 	return (
 		<div className="projectBox">
 			<div className="techUsed">
-					{
-					props.info.tech.map((x) => {
-						console.log(x + " <<<<<")
-						return <img src={x} className="techIcon"/>;
-					})}
-				</div>
+				{props.info.tech.map((x, index) => {
+					return <img src={x} className="techIcon" key={index} />;
+				})}
+			</div>
 			<div className="imageBox">
 				<img className="projectImg" src={props.info.img} />
 				<div className="projectImgBlock"></div>
@@ -73,8 +71,6 @@ function Project(props) {
 					})}
 				</div> */}
 			</div>
-			
-			
 		</div>
 	);
 }

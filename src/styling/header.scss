@@ -28,7 +28,7 @@
 	}
 	.right-side-header {
 		display: flex;
-		width:fit-content;
+		width: fit-content;
 		h2 {
 			text-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2);
 			color: #476ccc;
@@ -39,18 +39,18 @@
 		}
 	}
 }
-@media (max-width: 1000px) and (min-width: 651px){
+@media (max-width: 1000px) and (min-width: 651px) {
 	.header {
-		a{
+		a {
 			width: 50%;
-			h1{
+			h1 {
 				margin-left: 0;
 				font-size: 2em;
 			}
 		}
-		.right-side-header{
+		.right-side-header {
 			width: 50%;
-			h2{
+			h2 {
 				width: 100px;
 				margin-left: auto;
 				margin-right: auto;
@@ -63,11 +63,11 @@
 		h1 {
 			display: none;
 		}
-		.right-side-header{
+		.right-side-header {
 			width: 100%;
 			display: flex;
 			justify-content: space-around;
-			h2{
+			h2 {
 				width: 40%;
 			}
 		}
