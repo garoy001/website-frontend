@@ -1,6 +1,6 @@
-import Projects from '../components/projects';
 import React, { useRef, useState } from 'react';
 import Intro from './subpages/intro';
+import { About } from './subpages/about';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import NavigationComp from '../components/navigation';
@@ -46,10 +46,15 @@ export const Main = () => {
 						<NavigationComp
 							isTopHidden={isActive ? 0 : 1}
 							isBottomHidden={isActive ? 1 : 0}
+							isLineHidden={isActive ? 1 : 0}
 							transitionTop={isActive ? 0 : 1.5}
 							transitionBottom={isActive ? 1.5 : 0}
+							transitionLine={isActive ? 1.5 : 0}
 						/>
-						<Intro />
+						<Intro
+							transitionText={isActive ? 1 : 0}
+							isTextHidden={isActive ? 1 : 0}
+						/>
 					</div>
 				)}
 			</SwiperSlide>
@@ -58,26 +63,16 @@ export const Main = () => {
 					<div className="h-100">
 						<NavigationComp
 							isTopHidden={isActive ? 1 : 0}
-							isBottomHidden={isActive ? 1 : 0}
-							transitionTop={isActive ? 1.5 : 0}
-							transitionBottom={isActive ? 1.5 : 0}
-							bottomText="Contact Me"
-						/>
-						Test 2
-					</div>
-				)}
-			</SwiperSlide>
-			<SwiperSlide className="my-bg-theme ">
-				{({ isActive }) => (
-					<div>
-						<NavigationComp
-							isTopHidden={isActive ? 1 : 0}
 							isBottomHidden={isActive ? 0 : 1}
+							isLineHidden={isActive ? 1 : 0}
 							transitionTop={isActive ? 1.5 : 0}
 							transitionBottom={isActive ? 0 : 1.5}
-							topText="About Me"
+							transitionLine={isActive ? 1.5 : 0}
 						/>
-						Test 3
+						<About
+							transitionText={isActive ? 1 : 0}
+							isTextHidden={isActive ? 1 : 0}
+						/>
 					</div>
 				)}
 			</SwiperSlide>

@@ -15,7 +15,13 @@ function NavigationComp(props) {
 				<i className="arrow-icon arrow-up"></i>
 				<h1>{props.topText ? props.topText : 'Home'}</h1>
 			</div>
-			<div className="home-right-button">
+			<div
+				className="home-right-button"
+				style={{
+					opacity: props.isLineHidden,
+					transition: `opacity ${props.transitionLine}s ease-in`,
+				}}
+			>
 				<h1>projects</h1>
 				<i className="arrow-icon arrow-right"></i>
 			</div>
@@ -29,6 +35,20 @@ function NavigationComp(props) {
 			>
 				<h1>{props.bottomText ? props.bottomText : 'About Me'}</h1>
 				<i className="arrow-icon arrow-down"></i>
+			</div>
+			<div
+				className="contact-icons"
+				style={{
+					opacity: props.isLineHidden,
+					transition: `opacity ${props.transitionLine}s ease-in`,
+				}}
+			>
+				<img
+					src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+					className="contact-icon"
+				/>
+				<i className="contact-icon devicon-github-original-wordmark" />
+				<div className="contact-icon-line"></div>
 			</div>
 		</nav>
 	);

@@ -24,7 +24,13 @@ const returnPosition = () => {
 };
 function Intro(props) {
 	return (
-		<div className="container-fluid  h-100">
+		<div
+			className="container-fluid  h-100 fade-in-text"
+			style={{
+				opacity: props.isTextHidden,
+				transition: `opacity ${props.transitionText}s ease-in`,
+			}}
+		>
 			<div className="row align-items-center h-100">
 				<div className="col-lg-2 col-1"></div>
 				<div className="col-lg-4 col-md-5 col-10" id="intro-info-box">

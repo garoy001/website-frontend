@@ -25,7 +25,7 @@
 	.home-top-button {
 		position: inherit;
 		top: 0;
-		line-height: 0;
+		line-height: 1;
 		margin-top: 5px;
 		@include hoverEffect;
 		h1 {
@@ -89,4 +89,32 @@
 
 .nav-hidden {
 	display: none;
+}
+.contact-icons {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	position: absolute;
+	left: 10px;
+	bottom: 0;
+	animation: fade-in 5s;
+}
+.contact-icon {
+	width: 40px;
+	font-size: 40px;
+}
+.contact-icon-line {
+	margin-top: 10px;
+	width: 5px;
+	background-color: white;
+	height: 100px;
+}
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }

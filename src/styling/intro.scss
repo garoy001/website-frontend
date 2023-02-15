@@ -1,3 +1,6 @@
+.fade-in-text {
+	transition: opacity 2s ease-in;
+}
 .intro-text-paragraph {
 	font-family: 'Kanit';
 	font-style: normal;
@@ -81,6 +84,9 @@
 	}
 }
 @media screen and (max-width: 768px) and (min-width: 600px) {
+	#intro-scroll-icons {
+		margin-top: 10%;
+	}
 	.intro-text-paragraph {
 		font-size: 24px;
 		text-align: center;
