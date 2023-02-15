@@ -43,11 +43,15 @@ function NavigationComp(props) {
 					transition: `opacity ${props.transitionLine}s ease-in`,
 				}}
 			>
-				<img
-					src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
-					className="contact-icon"
-				/>
-				<i className="contact-icon devicon-github-original-wordmark" />
+				<a href="https://www.linkedin.com/in/gaberoyce/">
+					<img
+						src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+						className="contact-icon"
+					/>
+				</a>
+				<a href="https://github.com/garoy001" style={{ color: 'white' }}>
+					<i className="contact-icon devicon-github-original-wordmark" />
+				</a>
 				<div className="contact-icon-line"></div>
 			</div>
 		</nav>
