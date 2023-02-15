@@ -1,0 +1,142 @@
+.intro-text-paragraph {
+	font-family: 'Kanit';
+	font-style: normal;
+	font-weight: 350;
+	font-size: 2vw;
+	line-height: 50px;
+	text-align: start;
+	/* or 139% */
+	background: linear-gradient(90deg, #ffffff 0%, #bebebe 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	span {
+		font-weight: 400;
+	}
+}
+#intro-info-title {
+	font-family: 'Kanit';
+	font-style: normal;
+	font-weight: 350;
+	font-size: 4vw;
+	line-height: 70px;
+	height: auto;
+	/* or 78% */
+	text-align: start;
+	background: linear-gradient(
+		90deg,
+		#ffffff 0%,
+		#b1b1b1 40.27%,
+		rgba(255, 255, 255, 0.52) 87.02%
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	span {
+		font-weight: 350;
+	}
+}
+
+@media screen and (min-width: 769px) {
+	.scrolling-icon {
+		width: 10vw;
+		display: flex;
+	}
+	.scrolling-container {
+		height: 80vh !important;
+		justify-content: end;
+		overflow-y: hidden;
+		margin-top: 10vh;
+	}
+	.scrolling-track {
+		height: 2000px !important;
+	}
+	.anim-1 {
+		animation: scroll 24s linear infinite;
+	}
+	.anim-2 {
+		animation: scroll 23s linear infinite;
+	}
+	.anim-3 {
+		animation: scroll 26s linear infinite;
+	}
+	#intro-scroll-icons {
+		overflow-y: hidden;
+		.flex-start-class {
+			justify-content: flex-start;
+		}
+		.flex-end-class {
+			justify-content: flex-end;
+		}
+		.flex-center-class {
+			justify-content: center;
+		}
+	}
+	@keyframes scroll {
+		0% {
+			transform: translateY(100vh);
+		}
+		100% {
+			transform: translateY(-270vh);
+		}
+	}
+}
+@media screen and (max-width: 768px) and (min-width: 600px) {
+	.intro-text-paragraph {
+		font-size: 24px;
+		text-align: center;
+	}
+	#intro-info-title {
+		margin-top: 20%;
+		font-size: 48px;
+		text-align: center;
+	}
+
+	$animationSpeed: 10s;
+	.scrolling-track {
+		display: flex;
+		width: calc(250px * 14) !important;
+		max-width: calc(250px * 14) !important;
+		padding: 0;
+		animation: scroll $animationSpeed linear infinite;
+	}
+	.scrolling-container {
+		height: 100px;
+		flex-direction: row;
+		justify-content: center;
+		overflow: hidden;
+		width: 70%;
+		position: relative;
+		margin: auto;
+		&::before {
+			left: 0;
+			top: 0;
+		}
+	}
+	.scrolling-icon {
+		height: 100px;
+		width: 250px;
+	}
+
+	@keyframes scroll {
+		0% {
+			transform: translateX(0);
+		}
+		100% {
+			transform: translateX(calc(-250px * 6));
+		}
+	}
+}
+@media screen and (max-width: 599px) {
+	#intro-scroll-icons {
+		display: none;
+	}
+	.intro-text-paragraph {
+		font-size: 24px;
+		text-align: center;
+	}
+	#intro-info-title {
+		margin-top: 20%;
+		font-size: 48px;
+		text-align: center;
+	}
+}

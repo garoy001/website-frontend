@@ -1,30 +1,58 @@
 @mixin bg-theme {
-	background: rgb(117, 183, 217);
 	background: linear-gradient(
-		0deg,
-		rgba(117, 183, 217, 1) 0%,
-		rgba(37, 76, 142, 1) 53%,
-		rgba(76, 25, 177, 1) 100%
+		89.68deg,
+		#00012e 0.34%,
+		#080a4a 24.13%,
+		#0e1057 41.78%,
+		#0d0f54 49.57%,
+		#0a0c4a 75.22%,
+		#040522 99.78%
 	);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .my-bg-theme {
 	@include bg-theme;
 }
-.gif-bg-main {
-	background-image: url('https://wallpaperaccess.com/full/7270387.gif');
-	background-repeat: repeat;
-	background-size: cover;
-	background-position: center;
+// .gif-bg-main {
+// 	background-image: url('https://wallpaperaccess.com/full/7270387.gif');
+// 	background-repeat: repeat;
+// 	background-size: cover;
+// 	background-position: center;
+// }
+// .gif-bg-projects {
+// 	background-image: url('https://wallpaperaccess.com/full/869923.gif');
+// 	background-repeat: repeat;
+// 	background-size: cover;
+// 	background-position: center;
+// }
+// .gif-bg-tech {
+// 	background-image: url('https://wallpaperaccess.com/full/8406764.gif');
+// 	background-repeat: repeat;
+// 	background-size: cover;
+// 	background-position: center;
+// }
+.swiper-pagination-bullet {
+	width: 15px !important;
+	height: 15px !important;
+	margin-bottom: 50% !important;
 }
-.gif-bg-projects {
-	background-image: url('https://wallpaperaccess.com/full/869923.gif');
-	background-repeat: repeat;
-	background-size: cover;
-	background-position: center;
+.swiper-pagination {
+	font-size: 30px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	right: auto !important;
+	left: 8px !important;
 }
-.gif-bg-tech {
-	background-image: url('https://wallpaperaccess.com/full/8406764.gif');
-	background-repeat: repeat;
-	background-size: cover;
-	background-position: center;
+.swiper-pagination-bullet {
+	background: black !important;
+	border: white 2px solid;
+}
+.swiper-pagination-bullet-active {
+	opacity: var(--swiper-pagination-bullet-opacity, 1);
+	background: var(
+		--swiper-pagination-color,
+		var(--swiper-theme-color)
+	) !important;
 }
