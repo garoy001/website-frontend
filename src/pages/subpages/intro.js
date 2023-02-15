@@ -60,17 +60,7 @@ function Intro(props) {
 									</div>
 								);
 							})}
-							{/* {icoList.map((e, index) => {
-								return (
-									<div
-										className={returnPosition()}
-										style={{ display: 'flex' }}
-										key={index + 1}
-									>
-										<img src={e} className="scrolling-icon" />
-									</div>
-								);
-							})} */}
+							
 						</div>
 					</div>
 				</div>

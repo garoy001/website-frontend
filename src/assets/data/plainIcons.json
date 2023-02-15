@@ -1,0 +1,22 @@
+{
+	"javascript": "devicon-javascript-plain",
+	"css": "devicon-css3-plain-wordmark",
+	"figma": "devicon-figma-plain",
+	"express": "devicon-express-original-wordmark",
+	"html": "devicon-html5-plain-wordmark",
+	"mongo": "devicon-mongodb-plain-wordmark",
+	"node": "devicon-nodejs-plain-wordmark",
+	"npm": "devicon-npm-original-wordmark",
+	"postgreSql": "devicon-postgresql-plain-wordmark",
+	"sqlLite": "devicon-sqlite-plain-wordmark",
+	"python": "devicon-python-plain-wordmark",
+	"react": "devicon-react-original-wordmark",
+	"trello": "devicon-trello-plain-wordmark",
+	"django": "devicon-django-plain-wordmark",
+	"git": "devicon-git-plain-wordmark",
+	"bash": "devicon-bash-plain",
+	"bootstrap": "devicon-bootstrap-plain-wordmark",
+	"sass": "devicon-sass-original",
+	"jquery": "devicon-jquery-plain-wordmark",
+	"vscode": "devicon-vscode-plain-wordmark"
+}
