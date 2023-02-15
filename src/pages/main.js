@@ -18,7 +18,7 @@ export const Main = () => {
 		<Swiper
 			slides-per-view={'1'}
 			direction={'vertical'}
-			mousewheel={true}
+			mousewheel={{ releaseOnEdges: true }}
 			speed={'600'}
 			effect={'coverflow'}
 			pagination={true}

@@ -56,3 +56,14 @@
 		var(--swiper-theme-color)
 	) !important;
 }
+.swiper-slide {
+}
+.page-cover {
+	position: relative;
+	z-index: 9999;
+}
+.overflow {
+	height: 100vh;
+	overflow-y: scroll !important;
+	z-index: 10000;
+}

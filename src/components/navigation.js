@@ -3,7 +3,7 @@ import { useSwiper } from 'swiper/react';
 function NavigationComp(props) {
 	const swiper = useSwiper();
 	return (
-		<nav className="nav-personal-outline">
+		<div className="nav-personal-outline">
 			<div
 				className="home-top-button "
 				style={{
@@ -46,15 +46,19 @@ function NavigationComp(props) {
 				<a href="https://www.linkedin.com/in/gaberoyce/">
 					<img
 						src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
-						className="contact-icon"
+						className="contact-icon contact-icon-li"
 					/>
 				</a>
-				<a href="https://github.com/garoy001" style={{ color: 'white' }}>
+				<a
+					href="https://github.com/garoy001"
+					className=" contact-icon-git"
+					style={{ color: 'white' }}
+				>
 					<i className="contact-icon devicon-github-original-wordmark" />
 				</a>
 				<div className="contact-icon-line"></div>
 			</div>
-		</nav>
+		</div>
 	);
 }
 
