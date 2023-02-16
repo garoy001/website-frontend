@@ -3,19 +3,25 @@ import '../../styling/about.scss';
 import pic from '../../assets/images/imgimgimg.jpg';
 const icoList = Object.values(Icons);
 
-export const About = () => {
+export const About = (props) => {
 	return (
-		<div className="container-fluid page-cover">
+		<div className="container-fluid page-cover fade-in-text">
 			<div className="row ">
 				<div className="col overflow">
-					<div className="row about-me-desktop">
+					<div
+						className="row about-me-desktop"
+						style={{
+							opacity: props.isTextHidden,
+							transition: `opacity ${props.transitionText}s ease-in`,
+						}}
+					>
 						<div className="col-2"></div>
 						<div className="col-lg-3 photo-col">
 							<div className="pic-container">
 								<img className="pic" src={pic} />
 							</div>
 						</div>
-						<div className="col-lg-5 col-8 about-me-box">
+						<div className="col-lg-5 col-8 about-me-box fade-in-text">
 							<h1 className="about-me-title">Hello!</h1>
 							<p className="about-me-text about-me-text-1">
 								My name is Gabe Royce. Ever since the first time I touched a
@@ -44,7 +50,7 @@ export const About = () => {
 						</div>
 						<div className="col-lg-1 col-2"></div>
 					</div>
-					<div className="row about-me-mobile">
+					<div className="row about-me-mobile ">
 						<div className="col-12 about-me-box">
 							<div className="row">
 								<div className="col-3"></div>
@@ -91,16 +97,28 @@ export const About = () => {
 						</div>
 						<div className="col-xl-1 col-2"></div>
 					</div>
-					<div className="row tech-stacks">
+					<div
+						className="row tech-stacks"
+						style={{
+							opacity: props.isTextHidden,
+							transition: `opacity ${props.transitionText}s ease-in .5s`,
+						}}
+					>
 						<div className="col-2"></div>
-						<div className="col tech-box">
+						<div className="col tech-box ">
 							<h1>The Tools I Use</h1>
 							<div className="tech-container">
 								{icoList.map((e, index) => {
 									return (
 										<div
 											className="techDisplay"
-											style={{ display: 'flex' }}
+											style={{
+												display: 'flex',
+												opacity: props.isTextHidden,
+												transition: `opacity ${
+													props.transitionText
+												}s ease-in ${1}.${index}s`,
+											}}
 											key={index + 1}
 										>
 											<i className={`${e} tech-icon`} />
