@@ -15,7 +15,7 @@ export const About = (props) => {
 							transition: `opacity ${props.transitionText}s ease-in`,
 						}}
 					>
-						<div className="col-2"></div>
+						<div className="col-2 spacer"></div>
 						<div className="col-lg-3 photo-col">
 							<div className="pic-container">
 								<img className="pic" src={pic} />
@@ -53,16 +53,16 @@ export const About = (props) => {
 					<div className="row about-me-mobile ">
 						<div className="col-12 about-me-box">
 							<div className="row">
-								<div className="col-3"></div>
+								<div className="col-3 spacer"></div>
 								<div className="center-this col-12">
 									<div className="pic-container center-this">
 										<img className="pic" src={pic} />
 									</div>
 								</div>
-								<div className="col-3"></div>
+								<div className="col-3 spacer"></div>
 							</div>
-							<div className="row">
-								<div className="col-2"></div>
+							<div className="row spacer-relative">
+								<div className="col-2 spacer"></div>
 								<div className="col-8">
 									<h1 className="about-me-title">Hello!</h1>
 									<p className="about-me-text about-me-text-1">
@@ -92,10 +92,10 @@ export const About = (props) => {
 										I'm a huge reader and gamer.
 									</p>
 								</div>
-								<div className="col-2"></div>
+								<div className="col-2 spacer"></div>
 							</div>
 						</div>
-						<div className="col-xl-1 col-2"></div>
+						<div className="col-xl-1 col-2 spacer"></div>
 					</div>
 					<div
 						className="row tech-stacks"
@@ -104,7 +104,7 @@ export const About = (props) => {
 							transition: `opacity ${props.transitionText}s ease-in .5s`,
 						}}
 					>
-						<div className="col-2"></div>
+						<div className="col-2 spacer"></div>
 						<div className="col tech-box ">
 							<h1>The Tools I Use</h1>
 							<div className="tech-container">
@@ -127,7 +127,7 @@ export const About = (props) => {
 								})}
 							</div>
 						</div>
-						<div className="col-2"></div>
+						<div className="col-2 spacer"></div>
 					</div>
 				</div>
 			</div>

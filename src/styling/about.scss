@@ -221,6 +221,11 @@
 		margin-top: 20%;
 	}
 }
+@media screen and (max-width: 425px) {
+	.techDisplay {
+		width: 60px !important;
+	}
+}
 @media screen and (max-width: 1000px) {
 	.about-me-text {
 		font-size: 1em !important;

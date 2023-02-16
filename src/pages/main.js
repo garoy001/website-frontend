@@ -11,26 +11,38 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import '../App.css';
-import { EffectCoverflow, Pagination, Mousewheel, Navigation } from 'swiper';
+import {
+	EffectCoverflow,
+	Pagination,
+	Mousewheel,
+	Navigation,
+	Scrollbar,
+} from 'swiper';
 
 export const Main = () => {
 	return (
 		<Swiper
 			slides-per-view={'1'}
 			direction={'vertical'}
-			mousewheel={{ releaseOnEdges: true }}
 			speed={'600'}
 			effect={'coverflow'}
-			pagination={true}
 			autoHeight={true}
 			parallax={true}
-			freeMode={true}
+			followFinger={false}
 			navigation={{
-				hideOnClick: true,
 				prevEl: '.home-top-button',
 				nextEl: '.home-bottom-button',
 			}}
+			pagination={true}
+			mousewheel={{
+				releaseOnEdges: true,
+			}}
 			data-swiper-parallax-x="20"
+			// scrollbar={{
+			// 	dragClass: 'overflow',
+			// 	draggable: true,
+			// 	el: '.overflow',
+			// }}
 			coverflowEffect={{
 				rotate: 20,
 				stretch: -20,
@@ -38,7 +50,7 @@ export const Main = () => {
 				modifier: 1,
 				slideShadows: false,
 			}}
-			modules={[EffectCoverflow, Pagination, Mousewheel, Navigation]}
+			modules={[EffectCoverflow, Pagination, Mousewheel, Navigation, Scrollbar]}
 		>
 			<SwiperSlide className="my-bg-theme ">
 				{({ isActive }) => (
