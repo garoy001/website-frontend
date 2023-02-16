@@ -5,7 +5,7 @@
 	font-family: 'Kanit';
 	font-style: normal;
 	font-weight: 350;
-	font-size: 2vw;
+	font-size: 4em;
 	line-height: 50px;
 	text-align: start;
 	/* or 139% */
@@ -20,7 +20,7 @@
 	font-family: 'Kanit';
 	font-style: normal;
 	font-weight: 350;
-	font-size: 4vw;
+	font-size: 6em;
 	line-height: 70px;
 	height: auto;
 	/* or 78% */
@@ -81,6 +81,15 @@
 		100% {
 			transform: translateY(-270vh);
 		}
+	}
+}
+
+@media screen and (max-width: 1600px) {
+	#intro-info-title {
+		font-size: 5em;
+	}
+	.intro-text-paragraph {
+		font-size: 3em;
 	}
 }
 @media screen and (max-width: 768px) and (min-width: 600px) {

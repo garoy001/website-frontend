@@ -1,7 +1,7 @@
 .tech-icon {
 	color: white;
 	text-shadow: 5px 5px 5px rgb(0, 0, 0, 0.9);
-	font-size: 4vw;
+	font-size: 6em;
 	margin: 10px;
 	&:hover {
 		cursor: pointer;
@@ -81,6 +81,8 @@
 .center-this {
 	display: flex;
 	justify-content: center;
+	text-align: center;
+	align-items: center;
 }
 
 .about-me-mobile {
@@ -90,9 +92,9 @@
 		font-family: 'Kanit';
 		font-style: normal;
 		font-weight: 500;
-		font-size: 1vw;
+		font-size: 1.2em;
 		line-height: 1.2;
-		text-align: start;
+		text-align: center !important;
 		text-shadow: 1px 1px 1px rgb(256, 256, 256, 0.2);
 		/* or 139% */
 		background: linear-gradient(90deg, #ffffff 0%, #bebebe 100%);
@@ -109,7 +111,7 @@
 		text-shadow: 1px 1px 1px rgb(256, 256, 256, 0.2);
 		height: auto;
 		/* or 78% */
-		text-align: start;
+		text-align: center;
 		background: linear-gradient(
 			90deg,
 			#ffffff 0%,
@@ -138,7 +140,7 @@
 		font-family: 'Kanit';
 		font-style: normal;
 		font-weight: 500;
-		font-size: 1vw;
+		font-size: 1.2em;
 		line-height: 1.2;
 		text-align: start;
 		text-shadow: 1px 1px 1px rgb(256, 256, 256, 0.2);
@@ -172,12 +174,23 @@
 		}
 	}
 }
+@media screen and (max-width: 1500px) {
+	.photo-col {
+		height: 100%;
+		margin-bottom: 5%;
+	}
+}
+@media screen and (max-width: 1282px) {
+	.photo-col {
+		margin-bottom: 10%;
+	}
+}
 @media screen and (max-width: 1568px) {
 	.about-me-box {
 		margin-top: 5%;
 	}
 }
-@media screen and (max-width: 836px) {
+@media screen and (max-width: 1023px) {
 	.about-me-desktop {
 		display: none;
 	}
@@ -206,5 +219,29 @@
 @media screen and (max-width: 650px) {
 	.about-me-box {
 		margin-top: 20%;
+	}
+}
+@media screen and (max-width: 1000px) {
+	.about-me-text {
+		font-size: 1em !important;
+	}
+	.tech-icon {
+		font-size: 3em !important;
+	}
+}
+@media screen and (min-width: 1900px) {
+	.about-me-text {
+		font-size: 1.5em !important;
+	}
+	.about-me-title {
+		font-size: 5em !important;
+	}
+}
+@media screen and (min-width: 2400px) {
+	.about-me-text {
+		font-size: 2em !important;
+	}
+	.about-me-title {
+		font-size: 6em;
 	}
 }

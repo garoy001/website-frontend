@@ -48,7 +48,7 @@ export const About = () => {
 						<div className="col-12 about-me-box">
 							<div className="row">
 								<div className="col-3"></div>
-								<div className="col-6 center-this">
+								<div className="center-this col-12">
 									<div className="pic-container center-this">
 										<img className="pic" src={pic} />
 									</div>
