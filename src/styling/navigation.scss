@@ -1,17 +1,5 @@
-@mixin navigation-text-styling {
-	font-family: 'Kanit', sans-serif;
-	font-weight: 100;
-	font-size: 18px;
-}
-@mixin hoverEffect {
-	&:hover {
-		opacity: 0.7;
-		cursor: pointer;
-		h1 {
-			font-size: 20px;
-		}
-	}
-}
+@import './_mixins.scss';
+@import './_animations.scss';
 .nav-personal-outline {
 	position: absolute;
 	display: flex;
@@ -24,7 +12,7 @@
 
 	.home-top-button {
 		position: absolute;
-		top: 0;
+		top: 64px;
 		line-height: 1;
 		margin-top: 5px;
 		z-index: 99999;
@@ -35,20 +23,7 @@
 		}
 	}
 	.home-right-button {
-		position: fixed;
-		right: 0;
-		background-color: transparent;
-		transform: rotate(90deg);
-		line-height: 0;
-		z-index: 99999;
-		@include hoverEffect;
-		i {
-			transform: rotate(45deg);
-		}
-		h1 {
-			line-height: 0.2;
-			@include navigation-text-styling;
-		}
+		display: none;
 	}
 	.home-bottom-button {
 		position: inherit;
@@ -100,9 +75,10 @@
 	align-items: center;
 	position: fixed;
 	z-index: 99999;
-	left: 10px;
+	left: 0px;
 	bottom: 0px;
 	animation: fade-in 5s;
+	margin: 10px;
 }
 .contact-icon {
 	margin-bottom: 10px;
@@ -114,19 +90,5 @@
 	}
 	&:active {
 		transform: translateY(2px);
-	}
-}
-.contact-icon-line {
-	margin-top: 10px;
-	width: 5px;
-	background-color: white;
-	height: 12.5vh;
-}
-@keyframes fade-in {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
 	}
 }

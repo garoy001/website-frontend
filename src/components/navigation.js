@@ -1,4 +1,3 @@
-import '../styling/navigation.scss';
 import { useSwiper } from 'swiper/react';
 function NavigationComp(props) {
 	const swiper = useSwiper();

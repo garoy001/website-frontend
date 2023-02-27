@@ -5,8 +5,8 @@
 	font-family: 'Kanit';
 	font-style: normal;
 	font-weight: 350;
-	font-size: 4em;
-	line-height: 50px;
+	font-size: 1.5rem;
+	line-height: 30px;
 	text-align: start;
 	/* or 139% */
 	background: linear-gradient(90deg, #ffffff 0%, #bebebe 100%);
@@ -20,8 +20,7 @@
 	font-family: 'Kanit';
 	font-style: normal;
 	font-weight: 350;
-	font-size: 6em;
-	line-height: 70px;
+	font-size: 3em;
 	height: auto;
 	/* or 78% */
 	text-align: start;
@@ -38,120 +37,105 @@
 		font-weight: 350;
 	}
 }
-
-@media screen and (min-width: 769px) {
-	.scrolling-icon {
-		width: 10vw;
-		display: flex;
-	}
-	.scrolling-container {
-		height: 80vh !important;
-		justify-content: end;
-		overflow-y: hidden;
-		margin-top: 10vh;
-	}
-	.scrolling-track {
-		height: 2000px !important;
-	}
-	.anim-1 {
-		animation: scroll 24s linear infinite;
-	}
-	.anim-2 {
-		animation: scroll 23s linear infinite;
-	}
-	.anim-3 {
-		animation: scroll 26s linear infinite;
-	}
-	#intro-scroll-icons {
-		overflow-y: hidden;
-		.flex-start-class {
-			justify-content: flex-start;
-		}
-		.flex-end-class {
-			justify-content: flex-end;
-		}
-		.flex-center-class {
-			justify-content: center;
-		}
-	}
-	@keyframes scroll {
-		0% {
-			transform: translateY(100vh);
-		}
-		100% {
-			transform: translateY(-270vh);
-		}
+.intro-row {
+	margin-top: 20px;
+}
+///////////////////////////////////////////////
+$animationSpeed: 10s;
+.scrolling-track {
+	display: flex;
+	width: calc(250px * 14) !important;
+	max-width: calc(250px * 14) !important;
+	padding: 0;
+	animation: scroll $animationSpeed linear infinite;
+}
+.scrolling-container {
+	height: 100px;
+	flex-direction: row;
+	justify-content: center;
+	overflow: hidden;
+	width: 70%;
+	position: relative;
+	margin: auto;
+	&::before {
+		left: 0;
+		top: 0;
 	}
 }
-
-@media screen and (max-width: 1600px) {
-	#intro-info-title {
-		font-size: 5em;
+.scrolling-icon-mobile {
+	width: 10vw;
+	display: flex;
+	height: 50px;
+	width: 250px;
+}
+.anim-1 {
+	animation: scroll 18s linear infinite;
+	height: 50px;
+	width: 50px;
+	margin-left: 25px;
+	margin-right: 25px;
+}
+.anim-2 {
+	animation: scroll 16s linear infinite;
+	height: 50px;
+	width: 50px;
+	margin-left: 25px;
+	margin-right: 25px;
+}
+.anim-3 {
+	animation: scroll 20s linear infinite;
+	height: 50px;
+	width: 50px;
+	margin-left: 25px;
+	margin-right: 25px;
+}
+#intro-scroll-icons {
+	overflow-y: hidden;
+	.flex-start-class {
+		align-items: flex-start;
 	}
-	.intro-text-paragraph {
-		font-size: 3em;
+	.flex-end-class {
+		align-items: flex-end;
+	}
+	.flex-center-class {
+		align-items: center;
 	}
 }
-@media screen and (max-width: 768px) and (min-width: 600px) {
-	#intro-scroll-icons {
-		margin-top: 10%;
+.desktop-scroller {
+	display: none;
+}
+.scrolling-track-mobile {
+	width: calc(75px * 6);
+	display: flex;
+	flex-wrap: wrap;
+}
+// @keyframes scroll {
+// 	0% {
+// 		transform: translateX(100vh);
+// 	}
+// 	100% {
+// 		transform: translateX(-270vh);
+// 	}
+// }
+.mobile-scroller {
+	height: 25%;
+	.scrolling-container-mobile {
+		height: 100%;
+		width: 100%;
 	}
-	.intro-text-paragraph {
-		font-size: 24px;
-		text-align: center;
-	}
-	#intro-info-title {
-		margin-top: 20%;
-		font-size: 48px;
-		text-align: center;
-	}
-
-	$animationSpeed: 10s;
-	.scrolling-track {
-		display: flex;
-		width: calc(250px * 14) !important;
-		max-width: calc(250px * 14) !important;
-		padding: 0;
-		animation: scroll $animationSpeed linear infinite;
-	}
-	.scrolling-container {
-		height: 100px;
-		flex-direction: row;
-		justify-content: center;
-		overflow: hidden;
-		width: 70%;
-		position: relative;
-		margin: auto;
-		&::before {
-			left: 0;
-			top: 0;
-		}
-	}
-	.scrolling-icon {
-		height: 100px;
-		width: 250px;
-	}
-
-	@keyframes scroll {
-		0% {
-			transform: translateX(0);
-		}
-		100% {
-			transform: translateX(calc(-250px * 6));
-		}
+	.scrolling-track-mobile {
+		height: 100%;
 	}
 }
-@media screen and (max-width: 599px) {
-	#intro-scroll-icons {
-		display: none;
+.bottom-row-spacer {
+	height: 103px;
+}
+
+@keyframes scroll {
+	0% {
+		transform: translateX(100vw);
 	}
-	.intro-text-paragraph {
-		font-size: 24px;
-		text-align: center;
-	}
-	#intro-info-title {
-		margin-top: 20%;
-		font-size: 48px;
-		text-align: center;
+	100% {
+		transform: translateX(calc(-75px * 6));
 	}
 }

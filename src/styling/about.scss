@@ -10,15 +10,6 @@
 	}
 	z-index: 99999999;
 }
-
-.axios-ico {
-	background-image: url('../assets/images/axios-iconsvg.png');
-	height: 48px;
-	width: 48px;
-	background-size: contain;
-	background-position: center;
-	background-repeat: no-repeat;
-}
 .tech-container {
 	justify-content: center;
 	align-items: center;
@@ -88,13 +79,17 @@
 .about-me-mobile {
 	width: 100vw;
 	display: none;
+	align-items: flex-start;
+	.about-me-box {
+		margin-top: 12.5%;
+	}
 	.about-me-text {
 		font-family: 'Kanit';
 		font-style: normal;
 		font-weight: 500;
 		font-size: 1.2em;
-		line-height: 1.2;
-		text-align: center !important;
+		line-height: 1.1;
+		text-align: start !important;
 		text-shadow: 1px 1px 1px rgb(256, 256, 256, 0.2);
 		/* or 139% */
 		background: linear-gradient(90deg, #ffffff 0%, #bebebe 100%);
@@ -127,7 +122,7 @@
 	}
 }
 .about-me-desktop {
-	margin-top: 2.5%;
+	margin-top: 10px;
 	align-items: flex-end;
 	padding: 20px;
 	justify-content: center;
@@ -172,81 +167,5 @@
 		span {
 			font-weight: 350;
 		}
-	}
-}
-@media screen and (max-width: 1500px) {
-	.photo-col {
-		height: 100%;
-		margin-bottom: 5%;
-	}
-}
-@media screen and (max-width: 1282px) {
-	.photo-col {
-		margin-bottom: 10%;
-	}
-}
-@media screen and (max-width: 1568px) {
-	.about-me-box {
-		margin-top: 5%;
-	}
-}
-@media screen and (max-width: 1023px) {
-	.about-me-desktop {
-		display: none;
-	}
-	.about-me-mobile {
-		display: flex;
-	}
-	.tech-box {
-		align-items: center;
-	}
-	.tech-stacks {
-		h1 {
-			font-size: 24px;
-		}
-	}
-	.tech-icon {
-		margin: 2px;
-		font-size: 6vw;
-	}
-	.tech-container {
-		margin-top: 5%;
-	}
-	.techDisplay {
-		justify-content: center;
-	}
-}
-@media screen and (max-width: 650px) {
-	.about-me-box {
-		margin-top: 20%;
-	}
-}
-@media screen and (max-width: 425px) {
-	.techDisplay {
-		width: 60px !important;
-	}
-}
-@media screen and (max-width: 1000px) {
-	.about-me-text {
-		font-size: 1em !important;
-	}
-	.tech-icon {
-		font-size: 3em !important;
-	}
-}
-@media screen and (min-width: 1900px) {
-	.about-me-text {
-		font-size: 1.5em !important;
-	}
-	.about-me-title {
-		font-size: 5em !important;
-	}
-}
-@media screen and (min-width: 2400px) {
-	.about-me-text {
-		font-size: 2em !important;
-	}
-	.about-me-title {
-		font-size: 6em;
 	}
 }

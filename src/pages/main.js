@@ -1,10 +1,10 @@
 import React, { useRef, useState } from 'react';
 import Intro from './subpages/intro';
 import { About } from './subpages/about';
+import NavBar from '../components/navbar';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import NavigationComp from '../components/navigation';
-import '../styling/navigation.scss';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -55,6 +55,7 @@ export const Main = () => {
 			<SwiperSlide className="my-bg-theme ">
 				{({ isActive }) => (
 					<div className="h-100">
+						<NavBar />
 						<NavigationComp
 							isTopHidden={isActive ? 0 : 1}
 							isBottomHidden={isActive ? 1 : 0}
@@ -73,6 +74,7 @@ export const Main = () => {
 			<SwiperSlide className="my-bg-theme text-primary">
 				{({ isActive }) => (
 					<div className="h-100">
+						<NavBar />
 						<NavigationComp
 							isTopHidden={isActive ? 1 : 0}
 							isBottomHidden={isActive ? 0 : 1}
