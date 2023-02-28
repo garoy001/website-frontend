@@ -58,7 +58,7 @@ const NavBar = () => {
 							<div className="dropdown-divider"></div>
 							<a
 								className="dropdown-item"
-								href="app.gabrielroyce.com"
+								href="https://app.gabrielroyce.com"
 								rel="noopener noreferrer"
 							>
 								All Projects
