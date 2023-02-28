@@ -56,7 +56,11 @@ const NavBar = () => {
 								Food-App
 							</a>
 							<div className="dropdown-divider"></div>
-							<a className="dropdown-item" href="#">
+							<a
+								className="dropdown-item"
+								href="app.gabrielroyce.com"
+								rel="noopener noreferrer"
+							>
 								All Projects
 							</a>
 						</div>
