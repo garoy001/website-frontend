@@ -1,0 +1,23 @@
+.tagcloud {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	font-weight: 650;
+	margin-top: 5%;
+	color: white;
+}
+.tagcloud--item:hover {
+	cursor: pointer;
+	color: rgb(56, 56, 236);
+}
+.cloud-content {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+@media (min-width: 2046px) {
+}
+@media (max-width: 769px) {
+	.cloud-content {
+		display: none;
+	}
+}

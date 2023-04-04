@@ -4,7 +4,7 @@ const NavBar = () => {
 	return (
 		<nav className="navbar navbar-expand-lg navbar-dark bg-personal navbar-selector  d-flex">
 			<a href="#home">
-				<div className="ml-4">
+				<div className="ml-4 brand-box">
 					<h1 className="navbar-brand-text font-montserrat">
 						dev.gabrielroyce.com
 					</h1>

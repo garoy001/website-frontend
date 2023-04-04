@@ -1,0 +1,38 @@
+.icon-wrapper {
+	background-color: rgb(256, 256, 256, 0.5);
+}
+.icon-ico {
+	height: 50px;
+	width: 50px;
+}
+.overlay {
+	--gradient-width: 30% !important;
+}
+.skill-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	width: 80%;
+}
+.skill-list-box {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.skill-list-item {
+	font-size: 30px;
+	padding-left: 5%;
+	padding-right: 5%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 33%;
+	&:hover {
+		opacity: 0.5;
+		cursor: pointer;
+	}
+	.stars-container {
+		color: rgb(255, 255, 0);
+	}
+}

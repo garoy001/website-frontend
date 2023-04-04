@@ -4,6 +4,8 @@
 @import './styling/main.scss';
 @import './styling/footer.scss';
 @import './styling/navbar.scss';
+@import './styling/cloud.scss';
+@import './styling/skills.scss';
 html {
 	scroll-behavior: smooth;
 	background-color: #262626;
@@ -19,6 +21,7 @@ h4,
 h5,
 p {
 	color: white;
+	margin-bottom: 0;
 }
 section {
 	background-color: black;
