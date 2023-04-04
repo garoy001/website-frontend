@@ -2,7 +2,30 @@
 @import './styling/about.scss';
 @import './styling/intro.scss';
 @import './styling/main.scss';
-@import './styling/navigation.scss';
-@import './styling/_mixins.scss';
-@import './styling/_mediaqueries.scss';
+@import './styling/footer.scss';
 @import './styling/navbar.scss';
+html {
+	scroll-behavior: smooth;
+	background-color: #262626;
+}
+body {
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+	color: white;
+}
+section {
+	background-color: black;
+}
+.body-close-tag {
+	margin-bottom: 0 !important;
+}
+.body-close-tag-div {
+	background-color: black;
+}

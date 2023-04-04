@@ -1,56 +1,87 @@
-@import './_mixins.scss';
-// .gif-bg-main {
-// 	background-image: url('https://wallpaperaccess.com/full/7270387.gif');
-// 	background-repeat: repeat;
-// 	background-size: cover;
-// 	background-position: center;
-// }
-// .gif-bg-projects {
-// 	background-image: url('https://wallpaperaccess.com/full/869923.gif');
-// 	background-repeat: repeat;
-// 	background-size: cover;
-// 	background-position: center;
-// }
-// .gif-bg-tech {
-// 	background-image: url('https://wallpaperaccess.com/full/8406764.gif');
-// 	background-repeat: repeat;
-// 	background-size: cover;
-// 	background-position: center;
-// }
-.swiper-pagination-bullet {
-	width: 15px !important;
-	height: 15px !important;
-	margin-bottom: 50% !important;
+.txt {
+	color: white;
+	text-align: start;
+	font-family: 'Montserrat', sans-serif;
 }
-.swiper-pagination {
-	font-size: 30px;
-	height: 100%;
+.deco-text {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	opacity: 0.5;
+	margin-bottom: 0;
+	margin-top: 0;
+	.span-1 {
+		letter-spacing: 0.5rem;
+		font-size: 1.5rem;
+	}
+	.span-2 {
+		letter-spacing: 0rem;
+		font-size: 1.7rem;
+	}
+}
+.span-3 {
+	color: rgb(56, 56, 236);
+}
+.layer-1 {
+	padding-left: 4vw;
+}
+.layer-2 {
+	padding-left: 8vw;
+}
+.layer-2-5 {
+	padding-left: 10vw;
+}
+.layer-3 {
+	padding-left: 12vw;
+}
+.layer-3-5 {
+	padding-left: 14vw;
+}
+.display-txt {
+	width: 90%;
+}
+.display-main-txt {
+	font-size: 5rem;
+}
+.txt-container {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	right: auto !important;
-	left: 8px !important;
-}
-.swiper-pagination-bullet {
-	background: black !important;
-	border: white 2px solid;
-}
-.swiper-pagination-bullet-active {
-	opacity: var(--swiper-pagination-bullet-opacity, 1);
-	background: var(
-		--swiper-pagination-color,
-		var(--swiper-theme-color)
-	) !important;
-}
+	justify-content: flex-start;
 
-.overflow {
-	overflow-y: scroll !important;
-	position: static;
+	padding-top: 5%;
+	padding-bottom: 5%;
 }
-.spacer {
-	z-index: -999;
+.tagcloud {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	font-weight: 650;
+	margin-top: 5%;
+	color: white;
 }
-.spacer-relative {
-	position: relative;
-	z-index: -999;
+.tagcloud--item:hover {
+	cursor: pointer;
+	color: rgb(56, 56, 236);
+}
+.cloud-content {
+	display: flex;
+	justify-content: center;
+}
+.about-text-container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+
+	p {
+		width: 100%;
+		padding-right: 7.5%;
+		font-size: 2rem;
+	}
+}
+.display-sub-text {
+	width: 100% !important;
+}
+.body-open-tag {
+	padding-top: 5% !important;
 }

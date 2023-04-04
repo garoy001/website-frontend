@@ -2,70 +2,79 @@ import { BsFillArrowLeftSquareFill } from 'react-icons/bs';
 
 const NavBar = () => {
 	return (
-		<nav
-			className="navbar navbar-expand-lg navbar-light bg-light bg-personal"
-			style={{ zIndex: 9999 }}
-		>
-			<a
-				rel="noopener noreferrer"
-				className="navbar-brand"
-				href="https://dev.gabrielroyce.com"
-				style={{ display: 'flex', alignItems: 'center' }}
-			>
-				<div
-					className="back-arrow"
-					style={{ fontSize: '2rem', display: 'flex', alignItems: 'center' }}
-				>
-					<BsFillArrowLeftSquareFill />
+		<nav className="navbar navbar-expand-lg navbar-dark bg-personal navbar-selector  d-flex">
+			<a href="#home">
+				<div className="ml-4">
+					<h1 className="navbar-brand-text font-montserrat">
+						dev.gabrielroyce.com
+					</h1>
 				</div>
 			</a>
-			<button
-				className="navbar-toggler"
-				type="button"
-				data-toggle="collapse"
-				data-target="#navbarSupportedContent"
-				aria-controls="navbarSupportedContent"
-				aria-expanded="false"
-				aria-label="Toggle navigation"
-			>
-				<span className="navbar-toggler-icon"></span>
-			</button>
+			<div className="container-fluid nav-link-box">
+				<button
+					className="navbar-toggler nav-collapse-button"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarPF"
+					aria-controls="navbarPF"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span className="navbar-toggler-icon"></span>
+				</button>
 
-			<div className="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul className="navbar-nav mr-auto">
-					<li
-						className="nav-item dropdown active"
-						style={{ marginLeft: '10vw' }}
-					>
-						<a
-							className="nav-link dropdown-toggle"
-							href="#"
-							id="navbarDropdown"
-							role="button"
-							data-toggle="dropdown"
-							aria-haspopup="true"
-							aria-expanded="false"
-						>
-							Projects <span className="sr-only">(current)</span>
-						</a>
-						<div className="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a className="dropdown-item" href="#">
-								CETAMD
-							</a>
-							<a className="dropdown-item" href="#">
-								Food-App
-							</a>
-							<div className="dropdown-divider"></div>
+				<div
+					className="collapse navbar-collapse justify-content-md-end"
+					id="navbarPF"
+				>
+					<ul className="navbar-nav">
+						<li className="nav-item">
 							<a
-								className="dropdown-item"
-								href="https://app.gabrielroyce.com"
-								rel="noopener noreferrer"
+								className="nav-link active nav-link-text"
+								aria-current="page"
+								href="#about"
 							>
-								All Projects
+								About
 							</a>
-						</div>
-					</li>
-				</ul>
+						</li>
+						<li className="nav-item">
+							<a
+								className="nav-link active nav-link-text"
+								aria-current="page"
+								href="#expertise"
+							>
+								Projects
+							</a>
+						</li>
+						<li className="nav-item">
+							<a
+								className="nav-link active nav-link-text"
+								aria-current="page"
+								href="#team"
+							>
+								Skills
+							</a>
+						</li>
+						<li className="nav-item">
+							<a
+								className="nav-link active nav-link-text"
+								aria-current="page"
+								href="#partners"
+							>
+								Resume
+							</a>
+						</li>
+						<li className="nav-item">
+							<a
+								className="nav-link active nav-link-text"
+								aria-current="page"
+								href="#insights"
+							>
+								Contact
+							</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</nav>
 	);
