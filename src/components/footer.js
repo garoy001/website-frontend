@@ -19,7 +19,7 @@ export const Footer = () => {
 						<a
 							className="nav-link px-2 text-muted"
 							aria-current="page"
-							href="#expertise"
+							href="#projects"
 						>
 							Projects
 						</a>
@@ -28,7 +28,7 @@ export const Footer = () => {
 						<a
 							className="nav-link px-2 text-muted"
 							aria-current="page"
-							href="#team"
+							href="#skills"
 						>
 							Skills
 						</a>
@@ -37,7 +37,7 @@ export const Footer = () => {
 						<a
 							className="nav-link px-2 text-muted"
 							aria-current="page"
-							href="#partners"
+							href="#resume"
 						>
 							Resume
 						</a>
@@ -46,7 +46,7 @@ export const Footer = () => {
 						<a
 							className="nav-link px-2 text-muted"
 							aria-current="page"
-							href="#insights"
+							href="#contact"
 						>
 							Contact
 						</a>

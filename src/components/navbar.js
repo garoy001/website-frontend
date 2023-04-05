@@ -41,7 +41,7 @@ const NavBar = () => {
 							<a
 								className="nav-link active nav-link-text"
 								aria-current="page"
-								href="#expertise"
+								href="#projects"
 							>
 								Projects
 							</a>
@@ -50,7 +50,7 @@ const NavBar = () => {
 							<a
 								className="nav-link active nav-link-text"
 								aria-current="page"
-								href="#team"
+								href="#skills"
 							>
 								Skills
 							</a>
@@ -59,7 +59,7 @@ const NavBar = () => {
 							<a
 								className="nav-link active nav-link-text"
 								aria-current="page"
-								href="#partners"
+								href="#resume"
 							>
 								Resume
 							</a>
@@ -68,7 +68,7 @@ const NavBar = () => {
 							<a
 								className="nav-link active nav-link-text"
 								aria-current="page"
-								href="#insights"
+								href="#contact"
 							>
 								Contact
 							</a>
