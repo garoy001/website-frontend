@@ -21,18 +21,36 @@
 	justify-content: center;
 }
 .skill-list-item {
-	font-size: 30px;
+	font-size: 26px;
 	padding-left: 5%;
 	padding-right: 5%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	width: 33%;
+	min-width: 320px;
 	&:hover {
 		opacity: 0.5;
 		cursor: pointer;
 	}
 	.stars-container {
-		color: rgb(255, 255, 0);
+		color: rgba(253, 253, 253, 0.466);
+		display: flex;
+		flex-wrap: nowrap;
+	}
+}
+@media (max-width: 830px) {
+	.skill-list-item {
+		min-width: 250px;
+		font-size: 18px;
+	}
+}
+@media (max-width: 6550px) {
+	.skill-list {
+		justify-content: center;
+	}
+	.skill-list-item {
+		padding-top: 0.5rem !important;
+		padding-bottom: 0.5rem !important;
 	}
 }

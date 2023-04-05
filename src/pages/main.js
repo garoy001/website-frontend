@@ -10,6 +10,8 @@ import { CloudTest } from '../components/cloudtest';
 import { IconShow } from '../components/icon-show';
 import { AiOutlineStar } from 'react-icons/ai';
 import { AiFillStar } from 'react-icons/ai';
+import { HiOutlineMail } from 'react-icons/hi';
+import { ProjectShow } from '../components/project-show';
 const TagCloud = require('TagCloud');
 
 export const Main = () => {
@@ -126,6 +128,41 @@ export const Main = () => {
 				</div>
 			</section>
 			<section
+				id="projects"
+				style={{
+					height: '100%',
+					paddingTop: '10%',
+				}}
+			>
+				<div className="container-fluid">
+					<div
+						className="row-fluid"
+						style={{
+							height: '100%',
+
+							flexDirection: 'column',
+						}}
+					>
+						<div className="col-md-12 col-12 top-level-column top-down-center-col ">
+							<OpenTag
+								tag="h3"
+								innertext='section id="projects"'
+								classes="layer-1"
+							/>
+							<div className="project-section-wrapper my-5">
+								<ProjectShow />
+							</div>
+						</div>
+
+						<CloseTag
+							tag="h3"
+							innertext='section id="projects"'
+							classes="layer-1"
+						/>
+					</div>
+				</div>
+			</section>
+			<section
 				id="skills"
 				style={{
 					height: '100%',
@@ -176,7 +213,17 @@ export const Main = () => {
 								</div>
 							</div>
 						</div>
-
+						<div id="resume">
+							<h1>View My Resume</h1>
+							<button className="btn btn-secondary txt ">
+								<a
+									target="_blank"
+									href="https://docs.google.com/document/d/19Kn08KgcTH3qLxmKTZZ4RJN9_g6t3TDq/edit?usp=sharing&ouid=105037832923618926974&rtpof=true&sd=true"
+								>
+									resume
+								</a>
+							</button>
+						</div>
 						<CloseTag
 							tag="h3"
 							innertext='section id="skills"'
@@ -185,18 +232,51 @@ export const Main = () => {
 					</div>
 				</div>
 			</section>
-			<section id="resume"></section>
-			<section id="contact"></section>
+
 			<div className="body-close-tag-div">
 				<CloseTag
 					tag="h3"
 					innertext="body"
-					classes="txt body-close-tag my-4 body-open-tag"
+					classes="txt body-close-tag body-open-tag"
 				/>
 			</div>
 
-			<section id="footer">
+			<section id="contact">
+				<OpenTag tag="h3" innertext="footer" classes="txt py-5" />
+				<div className="py-5">
+					<OpenTag
+						tag="h3"
+						innertext='section id="contact"'
+						classes="txt layer-1"
+					/>
+					<div className="footerHead py-5 my-5">
+						<div>
+							<HiOutlineMail
+								style={{
+									marginRight: '1rem',
+									fontSize: '2rem',
+									color: 'white',
+								}}
+							/>
+							<a
+								rel="noopener noreferrer"
+								target={'_blank'}
+								href="https://mail.google.com/mail/u/0/?tf=cm&fs=1&to=garoy005@gmail.com&hl=en"
+							>
+								Contact Me
+							</a>
+						</div>
+					</div>
+
+					<CloseTag
+						tag="h3"
+						innertext='section id="contact"'
+						classes="txt layer-1"
+					/>
+				</div>
 				<Footer />
+
+				<CloseTag tag="h3" innertext="footer" classes="txt pb-5" />
 			</section>
 		</div>
 	);

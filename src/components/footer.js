@@ -1,6 +1,9 @@
+
 export const Footer = () => {
 	return (
-		<div class="container-fluid">
+		<div class="container-fluid footer-container">
+			
+
 			<footer class="py-3 " style={{ backgroundColor: 'black' }}>
 				<ul class="nav justify-content-center border-bottom pb-3 mb-3">
 					<li className="nav-item">
