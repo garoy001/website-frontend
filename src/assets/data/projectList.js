@@ -1,3 +1,4 @@
+import portfolioImg from '../images/portfolioimg.PNG';
 export const jsIco =
 	'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg';
 export const cssIco =
@@ -31,55 +32,50 @@ export const jqueryIco =
 
 export const projectObj = [
 	{
-		name: 'Weather Api App',
-		img: 'https://images.unsplash.com/photo-1580193813605-a5c78b4ee01a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80',
+		name: 'My Portfolio',
+		img: '"https://i.ibb.co/8mwS5Z3/portfolioimg.png',
 		links: {
 			github: {
-				frontEnd: '#',
+				frontEnd: 'https://github.com/garoy001/website-frontend',
 				backEnd: '',
 			},
-			deployed: '#',
+			deployed: 'https://dev.gabrielroyce.com',
 		},
-		tech: [jsIco, cssIco, jqueryIco, htmlIco],
-		dependencies: ['JQuery'],
+
+		dependencies: [
+			'jQuery',
+			'react',
+			'react-router-dom',
+			'bootstrap',
+			'sass',
+			'react-reveal',
+		],
 		description: {
-			short: 'Weather API serving weekly, daily, hourly weather updates',
+			short: 'A website to showcase myself as a developer',
 			long: '',
 		},
 	},
 	{
-		name: 'Cheese Api App',
-		img: 'https://images.unsplash.com/photo-1631379578550-7038263db699?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=874&q=80',
+		name: 'Pantheon Financial',
+		img: 'https://i.ibb.co/5krHNLt/panthpreview.png',
 		links: {
 			github: {
-				frontEnd: 'https://github.com/garoy001/CheeseLabFrontEnd',
-				backEnd: 'https://github.com/garoy001/CheeseLabBackend',
+				frontEnd: 'https://github.com/garoy001/pantheonfinancial',
+				backEnd: '',
 			},
 			deployed: '',
 		},
-		tech: [
-			jsIco,
-			cssIco,
-			expIco,
-			htmlIco,
-			mongoIco,
-			nodeIco,
-			reactIco,
-			sassIco,
-		],
+
 		dependencies: [
+			'jQuery',
 			'react',
 			'react-router-dom',
+			'bootstrap',
 			'sass',
-			'cors',
-			'dotenv',
-			'express',
-			'mongoose',
-			'morgan',
-			'nodemon',
+			'react-reveal',
 		],
 		description: {
-			short: 'An app to store your favorite cheeses',
+			short: 'Landing page for a digital asset investment firm',
 			long: '',
 		},
 	},
@@ -101,27 +97,26 @@ export const projectObj = [
 		},
 	},
 	{
-		name: 'Food Api App',
-		img: 'https://images.unsplash.com/photo-1482049016688-2d3e1b311543?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=410&q=80',
+		name: 'Wandering King ',
+		img: 'https://i.ibb.co/g6NC6PK/wkpreview.png',
 		links: {
 			github: {
-				frontEnd: 'https://github.com/garoy001/GAProject2',
+				frontEnd: 'https://github.com/garoy001/wkfrontend',
 				backEnd: '',
 			},
-			deployed: '',
+			deployed: 'https://wanderingkingstudios.com',
 		},
 		tech: [jsIco, cssIco, expIco, htmlIco, axiosIco, mongoIco],
 		dependencies: [
-			'ajax',
-			'axios',
-			'dotenv',
-			'ejs',
-			'express',
-			'method-override',
-			'mongoose',
+			'jQuery',
+			'react',
+			'react-router-dom',
+			'bootstrap',
+			'sass',
+			'react-reveal',
 		],
 		description: {
-			short: 'An api that returns food information and stores searches',
+			short: 'Landing page for a web2.5 game development studio',
 			long: '',
 		},
 	},

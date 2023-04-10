@@ -29,10 +29,22 @@ export const ProjectShow = () => {
 							</p>
 							<ul className="link-list">
 								<li className="link-list-item">
-									<a href={e.links.github.frontEnd}>Github</a>
+									<a
+										href={e.links.github.frontEnd}
+										rel="noopener noreferrer"
+										target={'_blank'}
+									>
+										Github
+									</a>
 								</li>
 								<li className="link-list-item">
-									<a href={e.links.deployed}>Live Site</a>
+									<a
+										href={e.links.deployed}
+										rel="noopener noreferrer"
+										target={'_blank'}
+									>
+										Live Site
+									</a>
 								</li>
 							</ul>
 						</div>

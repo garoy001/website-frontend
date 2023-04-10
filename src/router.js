@@ -4,7 +4,7 @@ import {
 	Route,
 } from 'react-router-dom';
 import App from './App';
-import Index from './pages/subpages/intro';
+
 import { Main } from './pages/main';
 const router = createBrowserRouter(
 	createRoutesFromElements(

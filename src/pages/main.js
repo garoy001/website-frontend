@@ -8,7 +8,11 @@ import { Footer } from '../components/footer';
 import $ from 'jquery';
 import { CloudTest } from '../components/cloudtest';
 import { IconShow } from '../components/icon-show';
-import { AiOutlineStar } from 'react-icons/ai';
+import {
+	AiOutlineStar,
+	AiOutlineLinkedin,
+	AiOutlineGithub,
+} from 'react-icons/ai';
 import { AiFillStar } from 'react-icons/ai';
 import { HiOutlineMail } from 'react-icons/hi';
 import { ProjectShow } from '../components/project-show';
@@ -250,7 +254,13 @@ export const Main = () => {
 						classes="txt layer-1"
 					/>
 					<div className="footerHead py-5 my-5">
-						<div>
+						<div
+							style={{
+								width: '119.59px',
+								display: 'flex',
+								alignItems: 'center',
+							}}
+						>
 							<HiOutlineMail
 								style={{
 									marginRight: '1rem',
@@ -259,11 +269,58 @@ export const Main = () => {
 								}}
 							/>
 							<a
+								style={{ textAlign: 'start' }}
 								rel="noopener noreferrer"
 								target={'_blank'}
 								href="https://mail.google.com/mail/u/0/?tf=cm&fs=1&to=garoy005@gmail.com&hl=en"
 							>
-								Contact Me
+								Email Me
+							</a>
+						</div>
+						<div
+							style={{
+								width: '119.59px',
+								display: 'flex',
+								alignItems: 'center',
+							}}
+						>
+							<AiOutlineLinkedin
+								style={{
+									marginRight: '1rem',
+									fontSize: '2rem',
+									color: 'white',
+								}}
+							/>
+							<a
+								style={{ textAlign: 'start' }}
+								rel="noopener noreferrer"
+								target={'_blank'}
+								href="https://www.linkedin.com/in/gaberoyce/"
+							>
+								LinkedIn
+							</a>
+						</div>
+						<div
+							style={{
+								width: '119.59px',
+								display: 'flex',
+								alignItems: 'center',
+							}}
+						>
+							<AiOutlineGithub
+								style={{
+									marginRight: '1rem',
+									fontSize: '2rem',
+									color: 'white',
+								}}
+							/>
+							<a
+								style={{ textAlign: 'start' }}
+								rel="noopener noreferrer"
+								target={'_blank'}
+								href="https://github.com/garoy001"
+							>
+								Github
 							</a>
 						</div>
 					</div>
