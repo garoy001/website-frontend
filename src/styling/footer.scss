@@ -1,0 +1,39 @@
+.footer-container {
+	height: 200px;
+}
+
+.footerHead {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	a {
+		color: white;
+	}
+}
+
+footer {
+	a {
+		&:hover {
+			cursor: pointer;
+			color: black !important;
+		}
+	}
+}
+.footer-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: rgb(0, 0, 0, 0.35);
+	width: 100% !important;
+	max-width: 100% !important;
+	min-height: 90%;
+	svg {
+		min-height: 32px !important;
+		min-width: 32px !important;
+	}
+}
+#contact {
+	padding-top: 5%;
+}

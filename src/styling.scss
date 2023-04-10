@@ -1,0 +1,35 @@
+//This page imports all the styling to reduce clutter on components
+@import './styling/about.scss';
+@import './styling/intro.scss';
+@import './styling/main.scss';
+@import './styling/footer.scss';
+@import './styling/navbar.scss';
+@import './styling/cloud.scss';
+@import './styling/skills.scss';
+@import './styling/projects.scss';
+html {
+	scroll-behavior: smooth;
+	background-color: #262626;
+}
+body {
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+	color: white;
+	margin-bottom: 0;
+}
+section {
+	background-color: black;
+}
+.body-close-tag {
+	margin-bottom: 0 !important;
+}
+.body-close-tag-div {
+	background-color: black;
+}
