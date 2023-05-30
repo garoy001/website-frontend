@@ -78,47 +78,56 @@ export const Main = () => {
 								<Stage />
 								<fog attach="fog" args={['#202025', 0, 80]} />
 								<Center>
-									<ambientLight intensity={2} />
-									<rectAreaLight position={[1, 2, 10]} intensity={20} />
-									<Float>
-										{' '}
-										<Html wrapperClass="canvas-html" fullscreen transform>
-											<div className="txt-container">
-												<OpenTag
-													tag="h3"
-													innertext="h1"
-													classes="txt layer-2"
-												/>
+									<PresentationControls
+										global
+										polar={[-1, 1]}
+										azimuth={[0.2, 0.5]}
+										config={{ mass: 2, tension: 400 }}
+										snap={{ mass: 4, tension: 400 }}
+									>
+										<ambientLight intensity={2} />
+										<rectAreaLight position={[1, 2, 10]} intensity={20} />
+										<Float>
+											{' '}
+											<Html wrapperClass="canvas-html" fullscreen transform>
+												<div className="txt-container">
+													<OpenTag
+														tag="h3"
+														innertext="h1"
+														classes="txt layer-2"
+													/>
 
-												<h2 className="txt display-txt display-main-txt layer-2-5">
-													Hi, <br></br> I'm <span className="span-3">Gabe</span>
-												</h2>
-												<CloseTag
-													tag="h3"
-													innertext="h1"
-													classes="txt layer-2"
-												/>
+													<h2 className="txt display-txt display-main-txt layer-2-5">
+														Hi, <br></br> I'm{' '}
+														<span className="span-3">Gabe</span>
+													</h2>
+													<CloseTag
+														tag="h3"
+														innertext="h1"
+														classes="txt layer-2"
+													/>
 
-												<OpenTag
-													tag="h3"
-													innertext="h2"
-													classes="txt layer-2 my-4"
-												/>
-												<h2 className="txt display-txt display-sub-txt layer-2-5">
-													A Fullstack{' '}
-													<span className="span-3">Web Developer</span> that
-													<span className="span-3"> builds </span>effective
-													<span className="span-3"> solutions</span> with
-													elegant <span className="span-3">designs</span>
-												</h2>
-												<CloseTag
-													tag="h3"
-													innertext="h2"
-													classes="txt  layer-2 my-4"
-												/>
-											</div>
-										</Html>
-									</Float>
+													<OpenTag
+														tag="h3"
+														innertext="h2"
+														classes="txt layer-2 my-4"
+													/>
+													<h2 className="txt display-txt display-sub-txt layer-2-5">
+														A Fullstack{' '}
+														<span className="span-3">Web Developer</span> that
+														<span className="span-3"> builds </span>effective
+														<span className="span-3"> solutions</span> with
+														elegant <span className="span-3">designs</span>
+													</h2>
+													<CloseTag
+														tag="h3"
+														innertext="h2"
+														classes="txt  layer-2 my-4"
+													/>
+												</div>
+											</Html>
+										</Float>
+									</PresentationControls>
 								</Center>
 							</Canvas>
 							<CloseTag tag="h3" innertext="section" classes="layer-1 pt-5" />
