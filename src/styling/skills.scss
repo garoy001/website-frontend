@@ -26,7 +26,7 @@
 	padding-right: 5%;
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-start;
 	width: 33%;
 	min-width: 320px;
 	&:hover {
@@ -47,7 +47,7 @@
 }
 @media (max-width: 6550px) {
 	.skill-list {
-		justify-content: center;
+		justify-content: flex-start;
 	}
 	.skill-list-item {
 		padding-top: 0.5rem !important;

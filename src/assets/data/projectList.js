@@ -63,7 +63,7 @@ export const projectObj = [
 				frontEnd: 'https://github.com/garoy001/pantheonfinancial',
 				backEnd: '',
 			},
-			deployed: '',
+			deployed: 'https://pantheonfinancial.netlify.app/',
 		},
 
 		dependencies: [
@@ -80,19 +80,19 @@ export const projectObj = [
 		},
 	},
 	{
-		name: 'Stocks Api App',
-		img: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
+		name: 'CETAMD',
+		img: 'https://i.ibb.co/GR0mMT3/Capturecetam.png',
 		links: {
 			github: {
-				frontEnd: 'https://github.com/garoy001/router_lab',
+				frontEnd: 'https://github.com/garoy001/CETAMFront',
 				backEnd: '',
 			},
-			deployed: '',
+			deployed: 'https://spiffy-blini-76b969.netlify.app/',
 		},
 		tech: [jsIco, cssIco, htmlIco, reactIco],
-		dependencies: ['react', 'react-router-dom'],
+		dependencies: ['react', 'react-router-dom', 'MongoDB', 'Express'],
 		description: {
-			short: 'A stock tracking app',
+			short: 'An Event and Venue Tracking App built in a team of 4',
 			long: '',
 		},
 	},
@@ -120,38 +120,38 @@ export const projectObj = [
 			long: '',
 		},
 	},
-	{
-		name: 'Magic 8 Ball',
-		img: 'https://www.etftrends.com/wp-content/uploads/2019/08/A-Magic-8-Ball-Market.jpg',
-		links: {
-			github: {
-				frontEnd: 'https://github.com/garoy001/express-lab-2',
-				backEnd: '',
-			},
-			deployed: '',
-		},
-		tech: [jsIco, cssIco, expIco, htmlIco],
-		dependencies: ['express', 'dotenv'],
-		description: {
-			short: 'A magic 8 ball app',
-			long: '',
-		},
-	},
-	{
-		name: 'Tavern Menu',
-		img: 'https://images.unsplash.com/photo-1555658636-6e4a36218be7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
-		links: {
-			github: {
-				frontEnd: 'https://github.com/garoy001/Git-Pub',
-				backEnd: '',
-			},
-			deployed: '',
-		},
-		tech: [jsIco, cssIco, expIco, htmlIco],
-		dependencies: ['dotenv', 'ejs', 'express'],
-		description: {
-			short: 'An editable menu for a Tavern',
-			long: '',
-		},
-	},
+	// {
+	// 	name: 'Magic 8 Ball',
+	// 	img: 'https://www.etftrends.com/wp-content/uploads/2019/08/A-Magic-8-Ball-Market.jpg',
+	// 	links: {
+	// 		github: {
+	// 			frontEnd: 'https://github.com/garoy001/express-lab-2',
+	// 			backEnd: '',
+	// 		},
+	// 		deployed: '',
+	// 	},
+	// 	tech: [jsIco, cssIco, expIco, htmlIco],
+	// 	dependencies: ['express', 'dotenv'],
+	// 	description: {
+	// 		short: 'A magic 8 ball app',
+	// 		long: '',
+	// 	},
+	// },
+	// {
+	// 	name: 'Tavern Menu',
+	// 	img: 'https://images.unsplash.com/photo-1555658636-6e4a36218be7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
+	// 	links: {
+	// 		github: {
+	// 			frontEnd: 'https://github.com/garoy001/Git-Pub',
+	// 			backEnd: '',
+	// 		},
+	// 		deployed: '',
+	// 	},
+	// 	tech: [jsIco, cssIco, expIco, htmlIco],
+	// 	dependencies: ['dotenv', 'ejs', 'express'],
+	// 	description: {
+	// 		short: 'An editable menu for a Tavern',
+	// 		long: '',
+	// 	},
+	// },
 ];

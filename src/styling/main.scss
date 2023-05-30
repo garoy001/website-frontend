@@ -60,7 +60,9 @@
 	padding-top: 5%;
 	padding-bottom: 5%;
 }
-
+.canvas-html + div {
+	width: 100%;
+}
 .about-text-container {
 	width: 100%;
 	display: flex;

@@ -13,9 +13,21 @@ import {
 	AiOutlineLinkedin,
 	AiOutlineGithub,
 } from 'react-icons/ai';
+import { Canvas, useFrame } from '@react-three/fiber';
+import { Controls } from './controls';
+import {
+	Html,
+	Center,
+	OrbitControls,
+	PresentationControls,
+	Stage,
+	Environment,
+	Float,
+} from '@react-three/drei';
 import { AiFillStar } from 'react-icons/ai';
 import { HiOutlineMail } from 'react-icons/hi';
 import { ProjectShow } from '../components/project-show';
+import { Fog } from 'three';
 const TagCloud = require('TagCloud');
 
 export const Main = () => {
@@ -41,7 +53,10 @@ export const Main = () => {
 		['jQuery', 4],
 		['R&D', 4],
 		['Data Analysis', 3],
+		['ThreeJS'],
+		['R3F'],
 	];
+
 	return (
 		<div>
 			<NavBar />
@@ -55,23 +70,57 @@ export const Main = () => {
 								classes="txt  my-4 body-open-tag"
 							/>
 							<OpenTag tag="h3" innertext="section" classes="mb-4 layer-1" />
-							<div className="txt-container">
-								<OpenTag tag="h3" innertext="h1" classes="txt layer-2" />
+							<Canvas
+								camera={{ fov: 90, near: 0.1, far: 100, position: [1, 2, 10] }}
+							>
+								<Controls></Controls>
+								<Environment preset="city" />
+								<Stage />
+								<fog attach="fog" args={['#202025', 0, 80]} />
+								<Center>
+									<ambientLight intensity={2} />
+									<rectAreaLight position={[1, 2, 10]} intensity={20} />
+									<Float>
+										{' '}
+										<Html wrapperClass="canvas-html" fullscreen transform>
+											<div className="txt-container">
+												<OpenTag
+													tag="h3"
+													innertext="h1"
+													classes="txt layer-2"
+												/>
 
-								<h2 className="txt display-txt display-main-txt layer-2-5">
-									Hi, <br></br> I'm <span className="span-3">Gabe</span>
-								</h2>
-								<CloseTag tag="h3" innertext="h1" classes="txt layer-2" />
+												<h2 className="txt display-txt display-main-txt layer-2-5">
+													Hi, <br></br> I'm <span className="span-3">Gabe</span>
+												</h2>
+												<CloseTag
+													tag="h3"
+													innertext="h1"
+													classes="txt layer-2"
+												/>
 
-								<OpenTag tag="h3" innertext="h2" classes="txt layer-2 my-4" />
-								<h2 className="txt display-txt display-sub-txt layer-2-5">
-									A Fullstack <span className="span-3">Web Developer</span> that
-									<span className="span-3"> builds </span>effective
-									<span className="span-3"> solutions</span> with elegant{' '}
-									<span className="span-3">designs</span>
-								</h2>
-								<CloseTag tag="h3" innertext="h2" classes="txt  layer-2 my-4" />
-							</div>
+												<OpenTag
+													tag="h3"
+													innertext="h2"
+													classes="txt layer-2 my-4"
+												/>
+												<h2 className="txt display-txt display-sub-txt layer-2-5">
+													A Fullstack{' '}
+													<span className="span-3">Web Developer</span> that
+													<span className="span-3"> builds </span>effective
+													<span className="span-3"> solutions</span> with
+													elegant <span className="span-3">designs</span>
+												</h2>
+												<CloseTag
+													tag="h3"
+													innertext="h2"
+													classes="txt  layer-2 my-4"
+												/>
+											</div>
+										</Html>
+									</Float>
+								</Center>
+							</Canvas>
 							<CloseTag tag="h3" innertext="section" classes="layer-1 pt-5" />
 						</div>
 						<div className="col-md-6 col-0 top-down-center-col">
@@ -196,9 +245,7 @@ export const Main = () => {
 											let stars = [];
 											for (let i = 0; i < e[1]; i++) {
 												if (i == 0) {
-													stars.push(<AiOutlineStar />);
 												} else {
-													stars.push(<AiFillStar />);
 												}
 											}
 											return (
@@ -222,7 +269,7 @@ export const Main = () => {
 							<button className="btn btn-secondary txt ">
 								<a
 									target="_blank"
-									href="https://docs.google.com/document/d/19Kn08KgcTH3qLxmKTZZ4RJN9_g6t3TDq/edit?usp=sharing&ouid=105037832923618926974&rtpof=true&sd=true"
+									href="https://docs.google.com/document/d/1QPFeK8lu-S-2OeCSOCjLhYgDW-NK5Ban/edit?usp=sharing&ouid=105037832923618926974&rtpof=true&sd=true"
 								>
 									resume
 								</a>
